@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/imageview"
+        android:layout_centerInParent="false"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:adjustViewBounds="true"
+        android:layout_above="@+id/capturePhoto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="10dp" />
+    <TextView
+        android:id="@+id/capturePhoto"
+        android:layout_width="wrap_content"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_above="@+id/selectPhoto"
+        android:layout_height="wrap_content"
+        android:text="Capture photo"/>
+
+    <TextView
+        android:id="@+id/selectPhoto"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Select Photo from gallery"/>
+
+</RelativeLayout>
