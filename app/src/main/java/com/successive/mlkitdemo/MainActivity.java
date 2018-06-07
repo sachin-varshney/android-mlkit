@@ -135,8 +135,8 @@ public class MainActivity extends AppCompatActivity {
                 imageView.setImageURI(selectedImageUri);
                 // Set the image in ImageView
                 progressDialog.show();
-//                getTextFromImage( selectedImageUri);
-                getLabelForImage(mImageCaptureUri);
+                getTextFromImage( selectedImageUri);
+//                getLabelForImage(mImageCaptureUri);
 //                getTextByCloudVisionAPi(selectedImageUri);
 ////            fetchText(photo);
 //            imageView.setImageBitmap(photo);
@@ -145,8 +145,8 @@ public class MainActivity extends AppCompatActivity {
             if(mImageCaptureUri!=null){
                 imageView.setImageURI(mImageCaptureUri);
                 progressDialog.show();
-//                getTextFromImage( mImageCaptureUri);
-                    getLabelForImage(mImageCaptureUri);
+                getTextFromImage( mImageCaptureUri);
+//                    getLabelForImage(mImageCaptureUri);
             }
 
 //            Bitmap bp = (Bitmap) data.getExtras().get("data");
